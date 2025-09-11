@@ -22,6 +22,41 @@ const followDummy = [
 ];
 
 
+
+
+
+
+
+const cards = [
+    {
+      title: 'Gamehok',
+      tag: 'Premium',
+      btnText: 'Get Now',
+      desc: 'Upgrade to premium membership and get 100 tickets and many other premium features.',
+      icon: '/assets/images/Two-Tickets.png',
+    },
+    {
+      title: 'Exclusive Arena',
+      tag: 'VIP',
+      btnText: 'Join',
+      desc: 'Unlock exclusive tournaments with higher rewards and priority access to all matches.',
+      icon: '/assets/images/Coins.png',
+    },
+    {
+      title: 'Elite Club',
+      tag: 'Elite',
+      btnText: 'Upgrade',
+      desc: 'Become part of the elite gaming community and earn special badges & recognition.',
+      icon: '/assets/images/user.png',
+    },
+  ]
+
+
+
+
+
+
+
 const popularGames = [
   {
     id: 1,
@@ -188,4 +223,4 @@ const popularGames = [
 ]
 
 
-export {followDummy, popularGames};
+export {followDummy, cards, popularGames};

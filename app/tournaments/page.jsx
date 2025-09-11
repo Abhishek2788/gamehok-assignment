@@ -51,7 +51,7 @@ export default function TournamentsPage() {
           <p className="text-gray-400 mt-3">Loading data...</p>
         </div>
       ): (
-        <TournamentCarousel tournaments={tournaments} title="Browse Tournaments" />
+        <TournamentCarousel tournaments={tournaments} title="Tournaments" />
       )}
     </main>
   )

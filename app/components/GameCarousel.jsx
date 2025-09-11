@@ -1,4 +1,5 @@
 'use client'
+import { formatGameName } from '@/lib/format'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -20,7 +21,7 @@ export default function GameCarousel({ games = [], title = "Play Tournament By G
             <div className="h-card w-40 md:w-64">
               <Image src={g.imagePath || '/assets/images/game-placeholder.jpg'} alt={g.gameName} width={320} height={160} className="img-round"/>
               <div className="mt-3">
-                <div className="font-medium text-center">{g.gameName}</div>
+                <div className="font-medium text-center">{formatGameName(g.gameName)}</div>
               </div>
             </div>
           </Link>

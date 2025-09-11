@@ -1,23 +1,33 @@
-# Gamehok – Gaming Tournament Platform
-Gamehok is a modern web application designed for hosting and participating in competitive online game tournaments.
-It is built with Next.js (App Router), Tailwind CSS, and JavaScript to deliver a responsive, high-performance, and gaming-themed user experience.
+# Gaming Tournament Platform
+Built with Next.js (App Router), Tailwind CSS, and JavaScript to deliver a responsive, high-performance, and gaming-themed user experience.
+
+# GitHub Link
+https://github.com/Abhishek2788/gamehok-assignment.git
+
+# Project URL
+https://gamehok-assignment-nine.vercel.app/
+
+# Project Video URL
+https://drive.google.com/file/d/14kOxYNy6u3725q4N4itBlR7B5Q1E0EMV/view?usp=sharing
+
+
 
 # Features
-Home / Landing Page
+- Home / Landing Page
 
-Header Section:
+- Header Section:
 
 Displays user avatar, profile menu, notifications, and virtual currencies (coins & tickets).
 
 Fixed at the top for better navigation.
 
-Hero Section with Video Background:
+# Hero Section with Video Background:
 
-Uses <video> tag for immersive gaming intro visuals.
+- Uses <video> tag for immersive gaming intro visuals.
 
-Engages users with an attractive landing experience.
+- Engages users with an attractive landing experience.
 
-Game Carousel:
+# Game Carousel:
 
 Fetches games dynamically from the Game API.
 
@@ -25,7 +35,7 @@ Includes “Popular Games” section powered by dummy data.
 
 Smooth horizontal scroll with clickable game cards.
 
-Tournament Carousel:
+# Tournament Carousel:
 
 Fetches tournaments dynamically from the Tournament API.
 
@@ -39,7 +49,7 @@ Dummy list of gamers with avatars & Follow button.
 
 Encourages community engagement.
 
-Premium Banner:
+# Premium Banner:
 
 Displays upgrade CTA with benefits like extra coins, tickets, and premium features.
 
@@ -78,76 +88,76 @@ Tabbed design for better UX.
 
 # Games
 
-Game List Page:
+# -----Game List Page:----
 
-Displays games fetched from API.
+- Displays games fetched from API.
 
-Includes Popular Games Section using dummy data.
+- Includes Popular Games Section using dummy data.
 
-Each card is linked to /games/[id] for details.
+- Each card is linked to /games/[id] for details.
 
-Game Detail Page:
+- Game Detail Page:
 
-Dynamic route: /games/[id] renders details from dummy dataset.
+- Dynamic route: /games/[id] renders details from dummy dataset.
 
-Includes:
+# Includes:
 
-Game thumbnails
+- Game thumbnails
 
-Game description
+- Game description
 
-Upcoming tournaments for that game
+- Upcoming tournaments for that game
 
-CTA buttons: Join / Learn More
+- CTA buttons: Join / Learn More
 
-Tabs Navigation (optional): Overview | Tournaments | Community
+- Tabs Navigation (optional): Overview | Tournaments | Community
 
 # Other Functionalities
 
-Responsive Design:
+# ----------Responsive Design:----------
 
-Mobile-first layout, optimized for tablets & desktops.
+- Mobile-first layout, optimized for tablets & desktops.
 
-Header pinned to top, BottomNav pinned to bottom (on mobile).
+- Header pinned to top, BottomNav pinned to bottom (on mobile).
 
-Loading States:
+- Loading States:
 
-Custom loading UI for API fetches.
+- Custom loading UI for API fetches.
 
-Error Handling:
+- Error Handling:
 
-Custom Not Found (404) Page with gaming-style glowing neon effects.
+- Custom Not Found (404) Page with gaming-style glowing neon effects.
 
-Animations:
+# Animations:
 
-Implemented with Tailwind transitions & keyframes (no external animation libraries).
+- Implemented with Tailwind transitions & keyframes (no external animation libraries).
 
-Hover effects, neon glow, and subtle scaling animations for modern look.
+- Hover effects, neon glow, and subtle scaling animations for modern look.
 
-Dummy Data Usage:
+# Dummy Data Usage:
 
-Used for Popular Games and Upcoming Tournaments where APIs are not yet implemented.
+- Used for Popular Games and Upcoming Tournaments where APIs are not yet implemented.
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 
-Framework: Next.js 14 (App Router)
+- Framework: Next.js 14 (App Router)
 
-Styling: Tailwind CSS
+- Styling: Tailwind CSS
 
-Icons: Lucide React
+- Icons: Lucide React
  + Custom SVGs
 
-Image Optimization: next/image
+- Image Optimization: next/image
 
-Routing: Dynamic routes /tournaments/[id] and /games/[id]
+- Routing: Dynamic routes /tournaments/[id] and /games/[id]
 
 # Data Fetching:
 
-Games API
+- Games API
 
-Tournaments API
+- Tournaments API
 
-Dummy objects for Popular Games & Follow suggestions
+- Dummy objects for Popular Games & Follow suggestions
 
 ## Getting Started
 
@@ -167,3 +177,23 @@ bun dev
 react-icons
 
 lucide-react
+
+# images
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+![alt text](image-3.png)
+
+![alt text](image-4.png)
+
+![alt text](image-5.png)
+
+![alt text](image-6.png)
+
+![alt text](image-7.png)
+
+![alt text](image-8.png)
+

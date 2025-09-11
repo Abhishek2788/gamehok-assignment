@@ -54,7 +54,7 @@ export default function TabsSection({ tournament, prizeTotal }) {
       </div>
 
       {/* Tab Content */}
-      <div className="p-4">
+      <div className="pr-2">
         {active === "overview" && (
           <>
             <h3 className="font-semibold mb-2 text-[18px] pt-4 pl-4 text-[#ECECEC]">
@@ -121,7 +121,7 @@ export default function TabsSection({ tournament, prizeTotal }) {
 
             {/* Prize Details */}
             <div className="mt-6 pl-4 rounded-2xl">
-              <div className="bg-gradient-to-b from-[#4D5A53] to-[#182920] rounded-tl-2xl rounded-tr-2xl flex pl-3 pt-3.5 pb-3.5 justify-between pr-3">
+              <div className="bg-gradient-to-l from-[#4D5A53] to-[#182920] rounded-tl-xl rounded-tr-xl flex pl-3 pt-3.5 pb-3.5 justify-between pr-3">
                 <h3 className="mb-2 text-[16px] font-semibold">
                   Total Tournament Prize
                 </h3>
@@ -139,7 +139,7 @@ export default function TabsSection({ tournament, prizeTotal }) {
                 {tournament.prizeCoins?.split(",").map((p, i) => (
                   <div
                     key={i}
-                    className="bg-gradient-to-r from-[#4D5A53] to-[#182920] flex pl-3 pt-3.5 pb-3.5 justify-between pr-3 last:rounded-bl-2xl last:rounded-br-2xl transition-all ease-in duration-1000 hover:bg-gradient-to-t"
+                    className="bg-[#192920] flex pl-3 pt-3.5 pb-3.5 justify-between pr-3 last:rounded-bl-xl last:rounded-br-xl transition-all ease-in duration-1000 hover:bg-[#274032]"
                   >
                     <div className="flex items-center gap-2">
                       <Image
@@ -169,18 +169,18 @@ export default function TabsSection({ tournament, prizeTotal }) {
               <h2 className="text-xl font-bold pb-4">Rounds and Schedule</h2>
               <div className="border-b-[#3C4B43] border-b-[1px] p-1 flex flex-col gap-3">
                 <div className="flex items-center justify-between">
-                  <div className="font-semibold text-[12px] text-[#ECECEC]">
+                  <div className="font-semibold text-[12px] md:text-[16px] text-[#ECECEC]">
                     Qualifiers <span className="text-[#77847c]">(Round 1)</span>
                   </div>
-                  <div className="bg-gradient-to-bl from-[#311A61] to-[#1C192E] pt-0.5 pb-0.5 pl-2 pr-2 rounded-[4px] text-[10px]">
+                  <div className="md:text-[16px] bg-gradient-to-bl from-[#311A61] to-[#1C192E] pt-0.5 pb-0.5 pl-2 pr-2 rounded-[4px] text-[10px]">
                     Single Elimination
                   </div>
                 </div>
                 <div className="flex items-center justify-between pb-3">
-                  <div className="text-[#ECECEC] text-xs">
+                  <div className="text-[#ECECEC] text-xs md:text-[16px]">
                     Tap 4 to next round
                   </div>
-                  <div className="text-[#ECECEC] text-xs">
+                  <div className="text-[#ECECEC] text-xs md:text-[16px]">
                     3rd Aug, 10:00 pm
                   </div>
                 </div>
@@ -188,18 +188,18 @@ export default function TabsSection({ tournament, prizeTotal }) {
 
               <div className="border-b-[#3C4B43] border-b-[1px] p-1 flex flex-col gap-3 mt-3">
                 <div className="flex items-center justify-between">
-                  <div className="font-semibold text-[12px] text-[#ECECEC]">
-                    Qualifiers <span className="text-[#77847c]">(Round 1)</span>
+                  <div className="font-semibold text-[12px] text-[#ECECEC] md:text-[16px]">
+                    Qualifiers <span className="text-[#77847c] md:text-[16px]">(Round 1)</span>
                   </div>
-                  <div className="bg-gradient-to-bl from-[#311A61] to-[#1C192E] pt-0.5 pb-0.5 pl-2 pr-2 rounded-[4px] text-[10px]">
+                  <div className="md:text-[16px] bg-gradient-to-bl from-[#311A61] to-[#1C192E] pt-0.5 pb-0.5 pl-2 pr-2 rounded-[4px] text-[10px]">
                     Single Elimination
                   </div>
                 </div>
                 <div className="flex items-center justify-between pb-3">
-                  <div className="text-[#ECECEC] text-xs">
+                  <div className="md:text-[16px] text-[#ECECEC] text-xs">
                     Tap 4 to next round
                   </div>
-                  <div className="text-[#ECECEC] text-xs">
+                  <div className="text-[#ECECEC] text-xs md:text-[16px]">
                     3rd Aug, 10:00 pm
                   </div>
                 </div>
@@ -209,7 +209,7 @@ export default function TabsSection({ tournament, prizeTotal }) {
             {/* How to join a match */}
             <div className="mt-8 pl-4">
               <h2 className="text-xl font-bold pb-4">How to Join a Match</h2>
-              <ul className="list-disc pl-6 text-[12px] text-[#BCBCBC]">
+              <ul className="list-disc pl-6 text-[12px] md:text-[16px] text-[#BCBCBC]">
                 <li>Have your game open already and on the latest version</li>
                 <li>
                   Once the match is configured you will receive an invite
@@ -224,8 +224,8 @@ export default function TabsSection({ tournament, prizeTotal }) {
             </div>
 
             {/* Organiser Details */}
-            <div className="rounded-tl-2xl rounded-tr-2xl mt-8 border-[1px] ml-3">
-              <div className="text-[14px] text-white bg-gradient-to-bl from-[#4D5A53] to-[#182920] rounded-tl-2xl rounded-tr-2xl pl-3 pt-3 pb-3">
+            <div className="rounded-tl-2xl rounded-tr-2xl mt-8 border-[1px] border-[#1A2A21] ml-3">
+              <div className="text-[14px] md:text-xl text-white bg-gradient-to-bl from-[#4D5A53] to-[#182920] rounded-tl-2xl rounded-tr-2xl pl-3 pt-3 pb-3">
                 Organiser's Details and contact
               </div>
               <div className="pl-3 pt-5 pb-5 pr-3 flex flex-col gap-5">
@@ -238,7 +238,7 @@ export default function TabsSection({ tournament, prizeTotal }) {
                         height={25}
                         alt="group"
                       />
-                      <span className="text-[#ECECEC] font-semibold">
+                      <span className="text-[#ECECEC] md:text-lg font-semibold">
                         Gamehok Esports
                       </span>
                     </div>
@@ -246,13 +246,13 @@ export default function TabsSection({ tournament, prizeTotal }) {
                       Follow
                     </button>
                   </div>
-                  <p className="text-[#BCBCBC] text-[10px]">
+                  <p className="text-[#BCBCBC] text-[10px] md:text-[16px]">
                     This is the in house organiser of this platform you can
                     follow our page on this platform for regular updates
                   </p>
                 </div>
                 <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
-                  <div className="flex items-center gap-1 text-[#BCBCBC] text-[12px]">
+                  <div className="flex items-center gap-1 text-[#BCBCBC] text-[12px] md:text-[16px]">
                     <Image
                       src="/assets/svg/mobile.svg"
                       width={20}
@@ -261,7 +261,7 @@ export default function TabsSection({ tournament, prizeTotal }) {
                     />
                     9890987754
                   </div>
-                  <div className="flex items-center gap-1 text-[#BCBCBC] text-[12px]">
+                  <div className="flex items-center gap-1 text-[#BCBCBC] text-[12px] md:text-[16px]">
                     <Image
                       src="/assets/svg/email.svg"
                       width={20}
@@ -270,7 +270,7 @@ export default function TabsSection({ tournament, prizeTotal }) {
                     />
                     Support@gamehok.com
                   </div>
-                  <div className="flex items-center gap-1 text-[#BCBCBC] text-[12px]">
+                  <div className="flex items-center gap-1 text-[#BCBCBC] text-[12px] md:text-[16px]">
                     <Image
                       src="/assets/svg/whatsapp.svg"
                       width={20}

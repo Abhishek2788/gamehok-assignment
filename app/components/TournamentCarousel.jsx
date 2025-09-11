@@ -1,8 +1,7 @@
 'use client'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Users } from 'lucide-react'
-import { epochToLocalString } from '@/lib/format'
+import { epochToLocalString, formatGameName } from '@/lib/format'
 
 export default function TournamentCarousel({ tournaments = [], title = "Tournaments" }) {
   return (
@@ -48,7 +47,7 @@ export default function TournamentCarousel({ tournaments = [], title = "Tourname
 
                   {/* Registered count */}
                   <div className="absolute top-2 right-2 flex items-center gap-1 bg-black/70 text-white text-xs px-2 py-1 rounded-full">
-                    <Users size={14} /> {t.registeredCount}/{t.totalCount}
+                    <Image src='/assets/svg/group.svg' alt="group" width={15} height={15} className='inline' /> {t.registeredCount}/{t.totalCount}
                   </div>
 
                   {/* Organizer logo */}
@@ -70,7 +69,7 @@ export default function TournamentCarousel({ tournaments = [], title = "Tourname
 
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2 my-2">
-                    <span className="bg-black/70 text-white text-xs px-2 py-1 rounded-full">{t.gameName}</span>
+                    <span className="bg-black/70 text-white text-xs px-2 py-1 rounded-full">{formatGameName(t.gameName)}</span>
                     <span className="bg-black/70 text-white text-xs px-2 py-1 rounded-full">{t.teamSize}</span>
                     <span className="flex gap-2 bg-black/70 text-white text-xs px-2 py-1 rounded-full">
                       Entry - {t.entryFees}
@@ -89,6 +88,7 @@ export default function TournamentCarousel({ tournaments = [], title = "Tourname
                     <div className="flex items-center gap-1 text-gray-300 text-xs mb-1">
                       <Image src='/assets/svg/trophy.svg' width={16} height={16} alt='trophy' />
                       <span>Prize Pool - {prizeTotal}</span>
+                      <Image src='/assets/svg/coin.svg' width={12} height={12} alt='coin' />
                     </div>
                     <div>
                       <Image src='/assets/svg/chevron-right.svg' width={16} height={16} alt='chevron-right' />

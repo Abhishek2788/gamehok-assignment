@@ -37,18 +37,18 @@ export default async function TournamentDetailPage({ params }) {
       {/* Banner */}
       <div className="relative">
         <Image
-          src={tournament.thumbnailPath || "/assets/images/tourn-placeholder.jpg"}
+          src={tournament.thumbnailPath || "/assets/images/apexlegends.jpg"}
           alt={tournament.name}
           width={800}
           height={400}
-          className="w-full h-[200px] object-cover"
+          className="w-full h-[200px] md:h-[400px]"
         />
         <Link href='#' >
           <div className="absolute top-2 right-2 px-2 py-1 rounded-full text-xs">
             <Image src='/assets/svg/forward.svg' width={24} height={24} alt="foward icon" />
           </div>
         </Link>
-        <Link href='#' >
+        <Link href='/tournaments' >
           <div className="absolute top-2 left-2 px-2 py-1 rounded-full text-xs">
             <Image src='/assets/svg/backward.svg' width={24} height={24} alt="backward icon" />
           </div>
@@ -105,6 +105,7 @@ export default async function TournamentDetailPage({ params }) {
       </div>
 
       <TabsSection tournament={tournament} prizeTotal={prizeTotal} />
+
 
       {/* Join button */}
       <div className="p-4">
