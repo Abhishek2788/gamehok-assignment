@@ -51,7 +51,7 @@ export default function Header(){
         {/* User Avatar */}
         <div className="relative hover:scale-105 hover:cursor-pointer">
           <div className='w-10 h-10 rounded-full flex items-center justify-center border-2 border-[#0CF285] shadow-lg shadow-emerald-800/40'>
-            <Image src="/assets/images/user.png" alt="user" width={40} height={40} className="rounded-full" priority/>
+            <Image src="/assets/images/user.png" alt="user" width={40} height={40} className="rounded-full" priority />
           </div>
         </div>
 
@@ -71,7 +71,7 @@ export default function Header(){
 
           {/* Notifications */}
           <div className="relative cursor-pointer hover:scale-110 transition-transform duration-300">
-            <Image src="/assets/images/alert.png" alt="alert" width={28} height={28} className="rounded-md"/>
+            <Image src="/assets/images/Alert.png" alt="alert" width={28} height={28} className="rounded-md"/>
           </div>
         </div>
       </div>
