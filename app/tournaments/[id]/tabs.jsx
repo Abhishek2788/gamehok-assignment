@@ -41,7 +41,7 @@ export default function TabsSection({ tournament, prizeTotal }) {
         {tabs.map((tab) => (
           <button
             key={tab.key}
-            className={`flex-1 py-3 text-sm font-medium ${
+            className={`flex-1 py-3 text-sm font-medium hover:cursor-pointer ${
               active === tab.key
                 ? "border-b-2 border-white text-white"
                 : "text-gray-400"

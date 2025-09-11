@@ -19,7 +19,7 @@ export default function FollowList({ list = [] }) {
                 <div className="font-medium text-[14px]">{p.name}</div>
               </div>
             </div>
-            <button className="px-3 py-1 rounded-md bg-[#002E14] text-white text-[12px] hover:bg-[#024c22]">Follow</button>
+            <button className="px-3 py-1 rounded-md bg-[#002E14] text-white text-[12px] hover:bg-[#024c22] hover:cursor-pointer">Follow</button>
           </div>
         ))}
       </div>

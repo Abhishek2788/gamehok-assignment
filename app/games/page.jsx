@@ -20,18 +20,6 @@ export default function GameList() {
 
   return (
     <div>
-      {/* Games fetched from API */}
-      <div className="p-4">
-        {loading ? (
-          <div className="flex flex-col items-center justify-center py-12">
-            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#0CF285]"></div>
-            <p className="text-gray-400 mt-3">Loading data...</p>
-          </div>
-        ) : (
-          <GameCarousel games={game} />
-        )}
-      </div>
-
       {/* Popular Games */}
       <section className="mt-10 pl-4 pr-4 mb-10">
         {/* Header */}
@@ -39,11 +27,6 @@ export default function GameList() {
           <h2 className="text-xl md:text-2xl font-bold text-white">
             Popular Games
           </h2>
-          <Link href="/games">
-            <span className="text-[#0CF285] text-sm">
-              View All
-            </span>
-          </Link>
         </div>
 
         {/* Grid of games */}
@@ -100,6 +83,18 @@ export default function GameList() {
           ))}
         </div>
       </section>
+
+      {/* Games fetched from API */}
+      <div className="p-4">
+        {loading ? (
+          <div className="flex flex-col items-center justify-center py-12">
+            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#0CF285]"></div>
+            <p className="text-gray-400 mt-3">Loading data...</p>
+          </div>
+        ) : (
+          <GameCarousel games={game} from="games" />
+        )}
+      </div>
     </div>
   );
 }

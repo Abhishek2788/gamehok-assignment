@@ -109,7 +109,7 @@ export default async function TournamentDetailPage({ params }) {
 
       {/* Join button */}
       <div className="p-4">
-        <button className="w-full bg-green-600 hover:bg-green-700 py-3 rounded-lg font-bold">
+        <button className="w-full bg-green-600 hover:bg-green-700 py-3 rounded-lg font-bold hover:cursor-pointer">
           JOIN TOURNAMENT
         </button>
       </div>

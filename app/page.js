@@ -66,10 +66,10 @@ export default function HomePage() {
             rewards.
           </p>
           <div className="mt-5 flex gap-4">
-            <button className="bg-[#0CF285] text-black font-semibold px-6 py-2 rounded-lg shadow hover:scale-105 transition">
+            <button className="bg-[#0CF285] text-black font-semibold px-6 py-2 rounded-lg shadow hover:scale-105 transition hover:cursor-pointer">
               Get Started
             </button>
-            <button className="bg-white/20 text-white font-semibold px-6 py-2 rounded-lg shadow hover:bg-white/30 transition">
+            <button className="bg-white/20 text-white font-semibold px-6 py-2 rounded-lg shadow hover:bg-white/30 transition hover:cursor-pointer">
               Learn More
             </button>
           </div>
@@ -124,7 +124,7 @@ export default function HomePage() {
             <button
               key={i}
               onClick={() => setActiveIndex(i)}
-              className={`slider-circle transition-all ${
+              className={`slider-circle transition-all hover:cursor-pointer ${
                 activeIndex === i ? "bg-[#ffffff] scale-110" : "bg-gray-400"
               }`}
             />
@@ -140,7 +140,7 @@ export default function HomePage() {
         </div>
       ) : (
         <div>
-          <GameCarousel games={games} />
+          <GameCarousel games={games} from="home" />
           <TournamentCarousel
             tournaments={tournaments}
             title="Compete in Battles"

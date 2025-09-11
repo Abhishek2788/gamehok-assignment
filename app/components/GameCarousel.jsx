@@ -3,16 +3,18 @@ import { formatGameName } from '@/lib/format'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function GameCarousel({ games = [], title = "Play Tournament By Games" }) {
+export default function GameCarousel({ games = [], title = "Play Tournament By Games", from }) {
+  console.log(from)
 
 
   return (
     <section className="mt-4">
       <div className="flex items-center justify-between mb-3">
         <h3 className="text-lg text-[#F2F2F2] font-semibold">{title}</h3>
-        <div>
+        {from==="home" ? <div>
           <Link href="/games" className="muted ml-3"><span className='text-[#0CF285] text-sm'>View All</span></Link>
-        </div>
+        </div> : null
+        }
       </div>
 
       <div id="games-scroll" className="h-scroll" style={{padding: '6px 0'}}>
