@@ -1,0 +1,191 @@
+const followDummy = [
+  {
+    id: "p1",
+    name: "AceGamer",
+    profileImagePath: "/assets/images/followersI.jpg",
+  },
+  {
+    id: "p2",
+    name: "SpeedKing",
+    profileImagePath: "/assets/images/followersI.jpg",
+  },
+  {
+    id: "p3",
+    name: "Mike Hussey",
+    profileImagePath: "/assets/images/followersI.jpg",
+  },
+  {
+    id: "p4",
+    name: "Steave Smith",
+    profileImagePath: "/assets/images/followersI.jpg",
+  },
+];
+
+
+const popularGames = [
+  {
+    id: 1,
+    name: "Battlegrounds Mobile India (BGMI)",
+    description:
+      "BGMI is a battle royale game where players land on an island, loot weapons and supplies, and fight to be the last one standing. It offers solo, duo, and squad matches with dynamic gameplay and tournaments.",
+    thumbnail: "/assets/images/bgmit2.jpg",
+    banner: "/assets/images/bgmit2.jpg",
+    developer: "Krafton",
+    genre: "Battle Royale",
+    platforms: ["Android", "iOS"],
+    upcomingTournaments: [
+      {
+        id: 101,
+        name: "BGMI Solo Championship",
+        thumbnail: "/assets/images/bgmit2.jpg",
+        organizer: "Gamehok Esports",
+        gameName: "BGMI",
+        teamSize: "Solo",
+        entryFees: 10,
+        prizeCoins: "1000,500,200",
+        status: "upcoming",
+        date: "2025-09-15T18:00:00Z",
+        registeredCount: 320,
+        totalCount: 500,
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Free Fire",
+    description:
+      "Free Fire is a fast-paced survival shooter game where players parachute onto a remote island and fight to survive against 49 others, lasting around 10 minutes per match.",
+    thumbnail: "/assets/images/freefiret2.png",
+    banner: "/assets/images/freefiret2.png",
+    developer: "Garena",
+    genre: "Battle Royale",
+    platforms: ["Android", "iOS"],
+    upcomingTournaments: [
+      {
+        id: 201,
+        name: "Free Fire Clash Squad Cup",
+        thumbnail: "/assets/images/freefiret2.png",
+        organizer: "Garena Official",
+        gameName: "Free Fire",
+        teamSize: "Squad",
+        entryFees: 15,
+        prizeCoins: "1500,800,300",
+        status: "upcoming",
+        date: "2025-09-18T19:00:00Z",
+        registeredCount: 120,
+        totalCount: 200,
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Call of Duty: Mobile",
+    description:
+      "COD Mobile delivers iconic maps, weapons, and modes from the Call of Duty franchise on mobile. It offers ranked play, battle royale, and competitive tournaments.",
+    thumbnail: "/assets/images/callofduty.jpg",
+    banner: "/assets/images/callofduty.jpg",
+    developer: "Activision",
+    genre: "FPS / Battle Royale",
+    platforms: ["Android", "iOS"],
+    upcomingTournaments: [
+      {
+        id: 301,
+        name: "CODM Ranked Battle",
+        thumbnail: "/assets/images/callofduty.jpg",
+        organizer: "Activision Esports",
+        gameName: "COD Mobile",
+        teamSize: "Squad",
+        entryFees: 25,
+        prizeCoins: "2000,1000,500",
+        status: "upcoming",
+        date: "2025-09-21T20:30:00Z",
+        registeredCount: 60,
+        totalCount: 100,
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "Valorant",
+    description:
+      "Valorant is a tactical 5v5 first-person shooter by Riot Games where precision, strategy, and teamwork are key. Agents with unique abilities bring depth to every match.",
+    thumbnail: "/assets/images/valorant.jpeg",
+    banner: "/assets/images/valorant.jpeg",
+    developer: "Riot Games",
+    genre: "Tactical FPS",
+    platforms: ["Windows"],
+    upcomingTournaments: [
+      {
+        id: 401,
+        name: "Valorant Agent Cup",
+        thumbnail: "/assets/images/valorant.jpeg",
+        organizer: "Riot Esports",
+        gameName: "Valorant",
+        teamSize: "5v5",
+        entryFees: 50,
+        prizeCoins: "5000,2500,1000",
+        status: "upcoming",
+        date: "2025-09-25T17:00:00Z",
+        registeredCount: 20,
+        totalCount: 32,
+      },
+    ],
+  },
+  {
+    id: 5,
+    name: "Apex Legends",
+    description:
+      "Apex Legends is a free-to-play hero shooter battle royale game where legendary characters with unique abilities team up to battle for glory and survival.",
+    thumbnail: "/assets/images/apexlegends.jpg",
+    banner: "/assets/images/apexlegends.jpg",
+    developer: "Respawn Entertainment",
+    genre: "Battle Royale / Hero Shooter",
+    platforms: ["Windows", "PS", "Xbox"],
+    upcomingTournaments: [
+      {
+        id: 501,
+        name: "Apex Squad Showdown",
+        thumbnail: "/assets/images/apexlegends.jpg",
+        organizer: "Respawn Esports",
+        gameName: "Apex Legends",
+        teamSize: "Trios",
+        entryFees: 30,
+        prizeCoins: "3000,1500,500",
+        status: "upcoming",
+        date: "2025-09-28T19:00:00Z",
+        registeredCount: 45,
+        totalCount: 60,
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: "Counter-Strike: Global Offensive (CS:GO)",
+    description:
+      "CS:GO is a classic competitive FPS where teams of Terrorists and Counter-Terrorists battle in objective-based missions. Known for its esports scene worldwide.",
+    thumbnail: "/assets/images/counter.png",
+    banner: "/assets/images/counter.png",
+    developer: "Valve",
+    genre: "FPS",
+    platforms: ["Windows", "Linux", "Mac"],
+    upcomingTournaments: [
+      {
+        id: 601,
+        name: "CS:GO Global Masters",
+        thumbnail: "/assets/images/counter.png",
+        organizer: "Valve Esports",
+        gameName: "CS:GO",
+        teamSize: "5v5",
+        entryFees: 40,
+        prizeCoins: "4000,2000,1000",
+        status: "upcoming",
+        date: "2025-09-30T21:00:00Z",
+        registeredCount: 18,
+        totalCount: 24,
+      },
+    ],
+  },
+]
+
+
+export {followDummy, popularGames};
