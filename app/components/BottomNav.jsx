@@ -6,10 +6,10 @@ import { usePathname } from 'next/navigation'
 export default function BottomNav() {
   const pathname = usePathname()
   const items = [
-    { href: '/', icon: '/assets/icons/home.svg', label: 'Home', id: 1 },
-    { href: '/tournaments', icon: '/assets/icons/cup.svg', label: 'My Tournament', id: 2 },
-    { href: '/notFound', icon: '/assets/icons/profile.svg', label: 'Social', id: 3 },
-    { href: '/notFound', icon: '/assets/icons/message.svg', label: 'Chats', id: 4 },
+    { href: '/', icon: '/assets/icons/home.svg', label: 'Home', id: '1' },
+    { href: '/tournaments', icon: '/assets/icons/cup.svg', label: 'My Tournament', id: '2' },
+    { href: '/notFound', icon: '/assets/icons/profile.svg', label: 'Social', id: '3' },
+    { href: '/notFound', icon: '/assets/icons/message.svg', label: 'Chats', id: '4' },
   ]
 
   return (
